@@ -11,13 +11,14 @@
   }],
   "deploy": {
     "production": {
+      "key": "~/muxue.pem",
       "user": "muxue",
       "host": ["59.110.237.228"],
       "port": "39999",
       "ref": "origin/master",
       "repo": "git@github.com:whhjdi/weapp.git",
       "path": "/www/production",
-      "ssh_options": ["StrictHostKeyChecking=no", "PasswordAuthentication=no"],
+      "ssh_options": "StrictHostKeyChecking=no",
       "pre-deploy-local": "echo 'This is a local executed command'",
       "env": {
         "NODE_ENV": "production"

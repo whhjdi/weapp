@@ -1,0 +1,26 @@
+{
+  "apps": [{
+    "name": "weapp",
+    "script": "server.js",
+    "env": {
+      "COMMON_VARIABLE": "true"
+    },
+    "env_production": {
+      "NODE_ENV": "production"
+    }
+  }],
+  "deploy": {
+    "production": {
+      "user": "muxue",
+      "host": ["59.110.237.228"],
+      "ref": "origin/master",
+      "repo": "git@github.com:whhjdi/weapp.git",
+      "path": "/var/www/weapp/production",
+      "ssh_options": "StrictHostKeyChecking=no",
+      "pre-deploy-local": "echo 'This is a local executed command'",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}

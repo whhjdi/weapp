@@ -8,14 +8,12 @@
     "env_production": {
       "NODE_ENV": "production"
     }
-  }, {
-    "name": "weapp",
-    "script": "server.js"
   }],
   "deploy": {
     "production": {
       "user": "muxue",
       "host": ["59.110.237.228"],
+      "port": "39999",
       "ref": "origin/master",
       "repo": "git@github.com:whhjdi/weapp.git",
       "path": "/www/production",

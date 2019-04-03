@@ -13,9 +13,10 @@
     "production": {
       "user": "muxue",
       "host": ["59.110.237.228"],
+      "post": "39999",
       "ref": "origin/master",
       "repo": "git@github.com:whhjdi/weapp.git",
-      "path": "/var/www/weapp/production",
+      "path": "/www/weapp/production",
       "ssh_options": "StrictHostKeyChecking=no",
       "pre-deploy-local": "echo 'This is a local executed command'",
       "env": {

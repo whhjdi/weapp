@@ -17,7 +17,7 @@
 			"host": "59.110.237.228",
 			"ref": "origin/master",
 			"repo": "git@github.com:whhjdi/weapp.git",
-			"path": "/www/weapp",
+			"path": "/www/weapp/production",
 			"ssh_options": "StrictHostKeyChecking=no",
 			"pre-deploy-local": "echo 'This is a local executed command'",
 			"env": {
